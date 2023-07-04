@@ -17,7 +17,6 @@ node {
     stage('build') {
       sh 'mvn clean package'
     }
-  
     stage('deploy') {
       def resourceGroup = '<resource_group>'
       def webAppName = '<app_name>'
